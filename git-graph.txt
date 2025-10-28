@@ -1,0 +1,24 @@
+* 8baa607 (HEAD -> main, origin/main, origin/HEAD) docs: Add changelog
+* fde3e20 docs: Add GIT_JOURNEY.md summarizing merge conflicts and learnings
+* bc95557 docs: Update CHANGELOG for Phase 4 steps
+| * 6266b26 (origin/feature/another-feature) feat: Add test feature
+|/  
+* 7198075 (tag: v1.1.0, tag: v1.0.0, feature/another-feature) docs: Update README
+* 57b436a docs: Update CHANGELOG for Phase 4 steps
+* 21e643f docs: Add FAQ section
+| * 14c8b4d (feature/new-feature) docs: Update CHANGELOG for fetch and pull commands
+| * 07be963 (origin/feature/new-feature) feat: Add new feature
+|/  
+* 414023f docs: Update CHANGELOG for fetch and pull commands
+*   3168a5e merge: Resolve conflicts from conflict-simulator into main
+|\  
+| * d3dd9b2 (instructor/conflict-simulator, conflict-simulator) updating conflict-simulator
+* | 858d4f4 Add checkpoint screenshots
+* |   c2fb67a merge: Resolve all conflicts between main and dev branches
+|\ \  
+| * | 02011a5 (origin/dev, instructor/dev, dev) updating dev
+| |/  
+* | 0312c6f (instructor/main, instructor/HEAD) updating main
+* | fadfd24 Revise README for DevOps Simulator project
+|/  
+* ae630eb Initial commit

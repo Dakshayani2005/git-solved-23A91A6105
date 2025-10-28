@@ -9,13 +9,13 @@ DevOps Simulator follows a microservices architecture designed for high availabi
 - **Technology**: Node.js + Express
 - **Production Port**: 8080
 - **Development Port**: 3000
-- **Scaling**: Horizontal auto-scaling (production only)
-- **Development Features**: Hot reload, debug mode
+- **Scaling**: Horizontal auto-scaling (production)
+- **Development Features**: Hot reload, debug mode (disabled in production)
 
 ### 2. Database Layer
 - **Database**: PostgreSQL 14
 - **Production**: Master-slave replication with automated backups
-- **Development**: Single local instance with seed data
+- **Development**: Single local instance with seed data and debug queries
 
 ### 3. Monitoring System
 - **Production**: Prometheus + Grafana with email alerts
@@ -25,16 +25,21 @@ DevOps Simulator follows a microservices architecture designed for high availabi
 ## Deployment Strategy
 
 ### Production
-- **Method**: Rolling updates
+- **Method**: Rolling updates (blue/green or canary)
 - **Zero-downtime**: Yes
 - **Rollback**: Automated on failure
 - **Region**: us-east-1
 
 ### Development
-- **Method**: Docker Compose
-- **Features**: Hot reload, instant feedback
-- **Testing**: Automated tests before deployment
+- **Method**: Docker Compose / local hot-reload
+- **Features**: Instant feedback, easy debugging
+- **Testing**: Run unit tests before deployment
+
+## Experimental Features
+- Experimental features are **not** enabled by default.
+- They must be behind feature flags or environment variables.
+- Documented here for testers; do not enable in production.
 
 ## Security
-- **Production**: SSL/TLS encryption, strict access controls
-- **Development**: Relaxed security for easier debugging
+- **Production**: SSL/TLS encryption, strict access controls, least-privilege for secrets.
+- **Development**: Relaxed security for local debugging; rotate credentials before staging/production.

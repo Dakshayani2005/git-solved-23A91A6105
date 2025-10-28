@@ -1,21 +1,45 @@
+# Application Configuration (Production primary; development optional)
 application:
   name: DevOpsSimulator
   version: 1.0.0
   environment: production
-  
+
 server:
+  # Production defaults
   host: 0.0.0.0
   port: 8080
   ssl_enabled: true
-  
+
+# Logging defaults (production)
 logging:
   level: INFO
   format: json
-  
-# Development configuration (enabled via environment variable)
+  output: /var/log/app.log
+
+database:
+  # Production database by default
+  host: prod-db.example.com
+  port: 5432
+  name: devops_prod
+
+features:
+  auto_scaling: true
+  load_balancer: enabled
+  backup_enabled: true
+
+# ------------------------------
+# Development / Experimental (disabled by default)
+# To enable, set environment variables or switch profile
 development:
   enabled: false
+  host: localhost
   port: 3000
+  ssl_enabled: false
   hot_reload: false
+  mock_external_apis: false
   debug_mode: false
-  mock_apis: false
+
+notifications:
+  slack_webhook: ""
+  discord_webhook: ""
+  email_alerts: false

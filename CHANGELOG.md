@@ -1,29 +1,14 @@
-## Phase 4 – Step 4.1
-- Used `git fetch` 1 time to check for updates from instructor.
-- Used `git pull` 1 time to synchronize main branch.
-
-## Phase 4 – Step 4.2
-- Used `git stash` 1 time to temporarily store unfinished work.
-- Added new feature in `scripts/new-feature.js`.
-- Added FAQ section to README.
-
-## Phase 4 – Step 4.3
-- Used `git cherry-pick` 1 time to bring a feature commit from another branch into main.
-
-## Phase 4 – Step 4.4
-- Used `git rebase` 1 time to synchronize `feature/another-feature` with latest main.
-
-## Phase 4 – Step 4.5
-- Used `git revert` 1 time to undo a bad commit safely.
-- Practiced `git reset` in all 3 modes:
-  - soft (keep staged)
-  - mixed (keep unstaged)
-  - hard (discard)
-- Used `git reflog` and `git cherry-pick` to recover a lost commit.
-
-## Phase 4 – Step 4.6
-- Created annotated tags:
-  - v1.0.0 – Initial resolved version
-  - v1.1.0 – Feature additions
-- Pushed tags to remote repository.
-
+- fde3e20: docs: Add GIT_JOURNEY.md summarizing merge conflicts and learnings (sonu, 16 seconds ago)
+- bc95557: docs: Update CHANGELOG for Phase 4 steps (sonu, 15 minutes ago)
+- 7198075: docs: Update README (sonu, 19 minutes ago)
+- 57b436a: docs: Update CHANGELOG for Phase 4 steps (sonu, 22 minutes ago)
+- 21e643f: docs: Add FAQ section (sonu, 26 minutes ago)
+- 414023f: docs: Update CHANGELOG for fetch and pull commands (sonu, 28 minutes ago)
+- 3168a5e: merge: Resolve conflicts from conflict-simulator into main (sonu, 32 minutes ago)
+- 858d4f4: Add checkpoint screenshots (sonu, 44 minutes ago)
+- c2fb67a: merge: Resolve all conflicts between main and dev branches (sonu, 53 minutes ago)
+- d3dd9b2: updating conflict-simulator (Hanu Gupta, 5 days ago)
+- 02011a5: updating dev (Hanu Gupta, 5 days ago)
+- 0312c6f: updating main (Hanu Gupta, 5 days ago)
+- fadfd24: Revise README for DevOps Simulator project (Hanu Gupta, 5 days ago)
+- ae630eb: Initial commit (Hanu Gupta, 5 days ago)
